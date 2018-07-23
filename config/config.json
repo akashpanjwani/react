@@ -1,0 +1,24 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "react-js-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactJs/ReactJsWebPart.js",
+          "manifest": "./src/webparts/reactJs/ReactJsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    }
+
+  },
+  "localizedResources": {
+    "ReactJsWebPartStrings": "lib/webparts/reactJs/loc/{locale}.js"
+  }
+}
